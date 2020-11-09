@@ -138,8 +138,6 @@ int key(const unsigned char *key, unsigned int **w) {
 
 int main(int argc, char *argv[]) {
     if (argc != 4) {
-        printf("Anyaes beta.\n");
-        printf("Needs testing.\n");
         printf("%s [-e/-d] <file> <key (32 bytes)>\n", argv[0]);
         return 0;
     }
@@ -166,7 +164,7 @@ int main(int argc, char *argv[]) {
             break;
             
         case 2:
-            printf("Encryption error! Cannot decrypt. Must be anyaes.\n");
+            printf("Encryption error! Cannot decrypt.\n");
             break;
             
         case 3:
